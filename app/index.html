@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="NoteWrangler">
+
+<head>
+<!-- <base href="/"> -->
+  <title>Note Wrangler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <div class="navbar-brand">
+      <a href="/#/">NoteWrangler</a>
+    </div>
+
+  </div>
+
+<nw-page-nav></nw-page-nav>
+</div>
+
+  
+</nav>
+
+
+
+
+<div class="hero-wrapper">
+  <div class="hero-content">
+    <div class="hero"></div>
+  </div>
+</div>
+<div class="container-content">
+  <div class="main-wrapper">
+  <div ng-view></div>
+</div>
+</div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="javascript/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/core-min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/md5.js"></script>
+
+
+ <script src="app.js"></script>
+  <!-- Controllers -->
+  <script src="javascript/directives/nwPageNav.js"></script>
+   <script src="javascript/directives/nwCategorySelector.js"></script>
+   <script src="javascript/directives/title.js"></script>
+  <script src="javascript/controllers/notes-create-controller.js"></script>
+  <script src="javascript/controllers/notes-edit-controller.js"></script>
+  <script src="javascript/controllers/notes-index-controller.js"></script>
+  <script src="javascript/controllers/notes-show-controller.js"></script>
+
+  <script src="javascript/controllers/users-create-controller.js"></script>
+  <script src="javascript/controllers/users-edit-controller.js"></script>
+  <script src="javascript/controllers/users-index-controller.js"></script>
+  <script src="javascript/controllers/users-show-controller.js"></script>
+
+<script src="javascript/services/note.js"></script>
+<script src="javascript/services/user.js"></script>
+<script src="javascript/services/category.js"></script>
+  <script src="routes.js"></script>
+<script src="javascript/filters/categoryFilter.js"></script>
+<script src="javascript/ngGravatar.js"></script>
+  
+ </body>
+</html>

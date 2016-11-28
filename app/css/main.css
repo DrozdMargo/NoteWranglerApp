@@ -1,0 +1,14 @@
+.navbar {
+	margin-bottom: 0;
+}
+.main-wrapper {
+	margin-top: 0;
+}
+
+.container-content{
+	background: #171b1f;
+	max-width: 100%;
+}
+.note-wrapper h1, .users-wrapper h1, .wrapper h1 {
+	 padding-left: 20px;
+}
