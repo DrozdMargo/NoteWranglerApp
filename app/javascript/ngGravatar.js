@@ -4,7 +4,7 @@ angular.module('ngGravatar').directive('gravatar', function(Gravatar){
 		replace: true,
 		restrict: "E",
 		template: "<img ng-src='{{gravatarUrl()}}'>",
-		scope: {email: "="},
+		scope: { email: "=" },
 		link: function(scope){
 			scope.gravatarUrl = function() {
 				return Gravatar(scope.email);
